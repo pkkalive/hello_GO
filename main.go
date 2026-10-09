@@ -2,13 +2,18 @@ package main
 
 import "fmt"
 
+var deckSize int = 20
+
 func main() {
-	var name string = "Kumar"
+	fmt.Println("Deck size:", deckSize)
+	var name string
+	fmt.Println("name:", name)
+	name = "Kumar"
 	var age int = 30
 	var isStudent bool = true
 	var pi float64 = 3.14159
 
-	firstName := "Purushotham"
+	firstName := myFirstName()
 	currentAge := 25
 	currentIsStudent := false
 	currentBalance := 3.14159
@@ -23,4 +28,8 @@ func main() {
 	fmt.Println("You are " + fmt.Sprint(currentAge) + " years old.")
 	fmt.Println("Are you a student? " + fmt.Sprint(currentIsStudent))
 	fmt.Println("Your balance is " + fmt.Sprint(currentBalance))
+}
+
+func myFirstName() string {
+	return "Purushotham"
 }
